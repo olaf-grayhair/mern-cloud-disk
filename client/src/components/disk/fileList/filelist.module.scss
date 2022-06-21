@@ -1,0 +1,20 @@
+.fileList{
+    cursor: pointer;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+    margin-bottom: 10px;
+    align-items: center;
+    &:hover{
+        background-color: rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .logo{
+        width: 50px;
+    }
+    span{
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
