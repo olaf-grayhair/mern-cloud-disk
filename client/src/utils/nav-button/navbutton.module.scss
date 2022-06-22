@@ -1,0 +1,26 @@
+.navbutton, .active{
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    position: relative;
+    &::before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-image: url('../../assets/images/arrow.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 14px;
+        right: 5px;
+    }
+
+    &:hover{
+        background-color: rgba($color: #a9a9a9, $alpha: 0.3);
+    }
+}
+.active{
+    top: 6px;
+    transform: rotate(90deg);
+}
